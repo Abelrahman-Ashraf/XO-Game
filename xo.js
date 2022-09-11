@@ -261,13 +261,13 @@ function clear() {
 function result() {
     if (xSpan.innerHTML == 3) {
         content.style.display = "none";
-        replay.style.display = "none";
+        replay.style.display = "ruby";
         winnerPlayer.innerHTML = "X ";
         loserPlayer.innerHTML = "O ";
         congratulation.style.display = "block";
     } else if (oSpan.innerHTML == 3) {
         content.style.display = "none";
-        replay.style.display = "none";
+        replay.style.display = "ruby";
         winnerPlayer.innerHTML = "O ";
         loserPlayer.innerHTML = "X ";
         congratulation.style.display = "block";
@@ -290,7 +290,7 @@ function Draw() {
 function back() {
     congratulation.style.display = "none";
     content.style.display = "grid";
-    replay.style.display = "block";
+    replay.style.display = "ruby";
     xSpan.innerHTML = 0;
     oSpan.innerHTML = 0;
     title.innerHTML = "<p>Let's Start...</p>";
