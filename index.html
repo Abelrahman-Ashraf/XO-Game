@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>XO Game</h2>
+            <p>Abdelrahman Ashraf</p>
+            <div class="result">
+                <h3>X Player :<span id="xSpan"> 0</span> </h3>
+                <h3>O Player :<span id="oSpan"> 0</span> </h3>
+            </div>
+        </div>
+        <div id="content" class="content">
+            <div id="title" class="title">
+                <p>Let's Start...</p>
+            </div>
+            <div id="letters" class="letters">
+                <div id="1" class="letter">
+                </div>
+                <div id="2" class="letter">
+                </div>
+                <div id="3" class="letter">
+                </div>
+                <div id="4" class="letter">
+                </div>
+                <div id="5" class="letter">
+                </div>
+                <div id="6" class="letter">
+                </div>
+                <div id="7" class="letter">
+                </div>
+                <div id="8" class="letter">
+                </div>
+                <div id="9" class="letter">
+                </div>
+            </div>
+        </div>
+        <button onclick="Draw()" id="replay" class="replay">Replay</button>
+        <div id="congratulation" class="congratulation">
+            <p>Congratulations <span id="winner">X </span>Player. <br><br> Good luck <span id="loser">O  </span>Player.</p>
+            <button onclick="back()"><i style="margin-right:5px ;" class="fa-solid fa-arrow-left"></i>Back</button>
+        </div>
+    </div>
+    <script src="xo.js"></script>
+</body>
+
+</html>

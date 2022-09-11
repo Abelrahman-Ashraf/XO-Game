@@ -1,0 +1,226 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #333333;
+    color: #fff;
+}
+
+.container {
+    margin: auto;
+    padding: 0 15px;
+    justify-content: center;
+    text-align: center;
+}
+
+@media(min-width:768px) {
+    .container {
+        width: 720px;
+    }
+}
+
+@media(min-width:992px) {
+    .container {
+        width: 950px;
+    }
+}
+
+@media(min-width:1200px) {
+    .container {
+        width: 1100px;
+    }
+}
+
+.header {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.header h2 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.header p {
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 50px;
+    letter-spacing: 5px;
+    color: rgba(255, 255, 255, 0.48);
+}
+
+.result {
+    display: flex;
+    justify-content: flex-start;
+    width: 500px;
+    height: 50px;
+    margin: auto;
+    background-color: black;
+    align-items: center;
+    font-size: 20px;
+}
+
+.result h3 {
+    margin: 0 20px 0 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: rgb(235, 233, 233);
+}
+
+@media(max-width:520px) {
+    .result {
+        width: auto;
+        font-size: 16px;
+    }
+}
+
+.content {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    display: grid;
+    gap: 5px;
+    grid-template-rows: 25%;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.397);
+}
+
+@media(max-width:520px) {
+    .content {
+        width: auto;
+        height: 470px;
+    }
+}
+
+.content div {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.title {
+    background-color: black;
+    color: rgb(235, 233, 233);
+    letter-spacing: 2px;
+}
+
+.letters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    background-color: #333333
+}
+
+.letters .letter {
+    width: 32.65%;
+    height: 32.5%;
+    font-size: 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: black;
+    cursor: pointer;
+    color: rgb(235, 233, 233);
+    transition: 0.3s;
+}
+
+@media(max-width:520px) {
+    .letters .letter {
+        width: 32.2%;
+        height: 32.5%;
+    }
+}
+
+.letters .letter:hover {
+    background-color: #1a1a1a;
+}
+
+.replay {
+    margin-top: 5px;
+    width: 164px;
+    height: 40px;
+    background-color: #000000;
+    color: rgb(235, 233, 233);
+    border: none;
+    font-size: 18px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.replay:hover {
+    background-color: #191919;
+    letter-spacing: 2px;
+}
+
+@media(max-width:520px) {
+    .replay {
+        width: 110px;
+        font-size: 16px;
+    }
+}
+
+
+/* congratulation stling  */
+
+.congratulation {
+    margin: 40px auto;
+    background-color: #1a1a1a;
+    padding: 20px;
+    width: 500px;
+    border-radius: 20px;
+    color: rgb(235, 233, 233);
+    display: none;
+}
+
+.congratulation p {
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.congratulation button {
+    margin-top: 20px;
+    display: flex;
+    left: 0;
+    width: 20%;
+    height: 35px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: #333333;
+    border: none;
+    color: rgb(235, 233, 233);
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+@media(max-width:520px) {
+    .congratulation {
+        width: auto;
+        height: 32.5%;
+    }
+    .congratulation p {
+        font-size: 25px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        line-height: 30px;
+    }
+    .congratulation button {
+        font-size: 14px;
+        width: 25%;
+    }
+}
+
+.congratulation button:hover {
+    letter-spacing: 2px;
+    background-color: #1a1a1a;
+}
