@@ -303,43 +303,53 @@ function result() {
 
 // Draw function 
 function btnReplay() {
-    if (letter1.innerHTML != "" &
-        letter2.innerHTML != "" &
-        letter3.innerHTML != "" &
-        letter4.innerHTML != "" &
-        letter5.innerHTML != "" &
-        letter6.innerHTML != "" &
-        letter7.innerHTML != "" &
-        letter8.innerHTML != "" &
-        letter9.innerHTML != "") {
-        replay.style.display = "ruby";
+    if (letter1.innerText != "") {
+        if (letter2.innerText != "") {
+            if (letter9.innerText != "") {
+                if (letter3.innerText != "") {
+                    if (letter4.innerText != "") {
+                        if (letter5.innerText != "") {
+                            if (letter6.innerText != "") {
+                                if (letter7.innerText != "") {
+                                    if (letter8.innerText != "") {
+                                        replay.style.display = "flex"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     } else {
         replay.style.display = "none";
     }
 }
 
 function Draw() {
-    clear()
-    title.innerHTML = "let's start again..."
+    clear();
+    title.innerHTML = "let's start again...";
+    replay.style.display = "none";
 }
 
 
 // back function 
 
 function back() {
+    clear();
     congratulation.style.display = "none";
     content.style.display = "grid";
-    replay.style.display = "ruby";
+    replay.style.display = "none";
     x = 0;
     z = 0;
     xSpan.innerHTML = x;
     oSpan.innerHTML = z;
-    title.innerHTML = "<p>Let's Start...</p>";
+    title.innerHTML = "Let's Start";
 }
 
 
 function timeOut() {
-    let dots = setInterval(function() { title.innerHTML += "." }, 1000)
+    let dots = setInterval(function() { title.innerHTML += "." }, 1000);
     setTimeout(function() { clear() }, 4000);
     setTimeout(function() { clearInterval(dots) }, 3000);
 }
