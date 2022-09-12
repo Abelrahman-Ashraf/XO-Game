@@ -150,6 +150,12 @@ body {
     letter-spacing: 1px;
     cursor: pointer;
     transition: 0.3s;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
 }
 
 .replay:hover {
