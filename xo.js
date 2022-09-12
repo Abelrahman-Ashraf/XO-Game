@@ -350,6 +350,7 @@ function back() {
 
 function timeOut() {
     let dots = setInterval(function() { title.innerHTML += "." }, 1000);
-    setTimeout(function() { clear() }, 4000);
     setTimeout(function() { clearInterval(dots) }, 3000);
+    let clearLetters = setInterval(function() { clear() }, 10);
+    setTimeout(function() { clearInterval(clearLetters) }, 1000)
 }
