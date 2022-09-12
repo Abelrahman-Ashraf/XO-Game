@@ -25,121 +25,130 @@ let mood = "x";
 // click funtion 
 
 letter1.onclick = function() {
-    if (mood === "x") {
+    if (mood === "x" && letter1.innerText == "") {
         letter1.innerHTML = "x";
         mood = "o";
         title.innerHTML = "O"
-    } else {
+    } else if (mood === "o" && letter1.innerText === "") {
         letter1.innerHTML = "o";
         mood = "x";
         title.innerHTML = "X"
     }
     winner()
     result()
+    btnReplay()
 }
 letter2.onclick = function() {
-    if (mood === "x") {
+    if (mood === "x" && letter2.innerText === "") {
         letter2.innerHTML = "x";
         mood = "o";
         title.innerHTML = "O "
-    } else {
+    } else if (mood === "o" && letter2.innerText === "") {
         letter2.innerHTML = "o";
         mood = "x";
         title.innerHTML = "X"
     }
     winner()
     result()
+    btnReplay()
 }
 letter3.onclick = function() {
-    if (mood === "x") {
+    if (mood === "x" && letter3.innerText === "") {
         letter3.innerHTML = "x";
         mood = "o";
         title.innerHTML = "O "
-    } else {
+    } else if (mood === "o" && letter3.innerText === "") {
         letter3.innerHTML = "o";
         mood = "x";
         title.innerHTML = "X"
     }
     winner()
     result()
+    btnReplay()
 }
 letter4.onclick = function() {
-    if (mood === "x") {
+    if (mood === "x" && letter4.innerText === "") {
         letter4.innerHTML = "x";
         mood = "o";
         title.innerHTML = "O "
-    } else {
+    } else if (mood === "o" && letter4.innerText === "") {
         letter4.innerHTML = "o";
         mood = "x";
         title.innerHTML = "X"
     }
     winner()
     result()
+    btnReplay()
 }
 letter5.onclick = function() {
-    if (mood === "x") {
+    if (mood === "x" && letter5.innerText === "") {
         letter5.innerHTML = "x";
         mood = "o";
         title.innerHTML = "O "
-    } else {
+    } else if (mood === "o" && letter5.innerText === "") {
         letter5.innerHTML = "o";
         mood = "x";
         title.innerHTML = "X"
     }
     winner()
     result()
+    btnReplay()
 }
 letter6.onclick = function() {
-    if (mood === "x") {
+    if (mood === "x" && letter6.innerText === "") {
         letter6.innerHTML = "x";
         mood = "o";
         title.innerHTML = "O "
-    } else {
+    } else if (mood === "o" && letter6.innerText === "") {
         letter6.innerHTML = "o";
         mood = "x";
         title.innerHTML = "X"
     }
     winner()
     result()
+    btnReplay()
 }
 letter7.onclick = function() {
-    if (mood === "x") {
+    if (mood === "x" && letter7.innerText === "") {
         letter7.innerHTML = "x";
         mood = "o";
         title.innerHTML = "O "
-    } else {
+    } else if (mood === "o" && letter7.innerText === "") {
         letter7.innerHTML = "o";
         mood = "x";
         title.innerHTML = "X"
     }
     winner()
     result()
+    btnReplay()
 }
 letter8.onclick = function() {
-    if (mood === "x") {
+    if (mood === "x" && letter8.innerText === "") {
         letter8.innerHTML = "x";
         mood = "o";
         title.innerHTML = "O "
-    } else {
+    } else if (mood === "o" && letter8.innerText === "") {
         letter8.innerHTML = "o";
         mood = "x";
         title.innerHTML = "X"
     }
     winner()
     result()
+    btnReplay()
 }
 letter9.onclick = function() {
-    if (mood === "x") {
+    if (mood === "x" && letter9.innerText === "") {
         letter9.innerHTML = "x";
         mood = "o";
         title.innerHTML = "O "
-    } else {
+    } else if (mood === "o" && letter9.innerText === "") {
         letter9.innerHTML = "o";
         mood = "x";
         title.innerHTML = "X"
     }
     winner()
     result()
+    btnReplay()
 }
 
 // winner function 
@@ -151,103 +160,118 @@ function winner() {
     // x winner
     if (letter1.innerHTML === "x" && letter2.innerHTML === "x" && letter3.innerHTML === "x") {
         title.innerHTML = "X Player Is Winner";
-        clear()
+        timeOut()
+        setTimeout(function() { title.innerHTML = "O Player will start"; }, 4000)
         x += 1;
         xSpan.innerHTML = x;
     } else if (letter1.innerHTML === "x" && letter4.innerHTML === "x" && letter7.innerHTML === "x") {
         title.innerHTML = "X Player Is Winner";
-        clear()
+        timeOut()
+        setTimeout(function() { title.innerHTML = "O Player will start"; }, 4000)
         x += 1;
         xSpan.innerHTML = x;
     } else if (letter1.innerHTML === "x" && letter5.innerHTML === "x" && letter9.innerHTML === "x") {
         title.innerHTML = "X Player Is Winner";
-        clear()
+        timeOut()
+        setTimeout(function() { title.innerHTML = "O Player will start"; }, 4000)
         x += 1;
         xSpan.innerHTML = x;
     } else if (letter2.innerHTML === "x" && letter5.innerHTML === "x" && letter8.innerHTML === "x") {
         title.innerHTML = "X Player Is Winner";
-        clear()
+        timeOut()
+        setTimeout(function() { title.innerHTML = "O Player will start"; }, 4000)
         x += 1;
         xSpan.innerHTML = x;
     } else if (letter3.innerHTML === "x" && letter5.innerHTML === "x" && letter7.innerHTML === "x") {
         title.innerHTML = "X Player Is Winner";
-        clear()
+        timeOut()
+        setTimeout(function() { title.innerHTML = "O Player will start"; }, 4000)
         x += 1;
         xSpan.innerHTML = x;
     } else if (letter3.innerHTML === "x" && letter6.innerHTML === "x" && letter9.innerHTML === "x") {
         title.innerHTML = "X Player Is Winner";
-        clear()
+        timeOut()
+        setTimeout(function() { title.innerHTML = "O Player will start"; }, 4000)
         x += 1;
         xSpan.innerHTML = x;
     } else if (letter4.innerHTML === "x" && letter5.innerHTML === "x" && letter6.innerHTML === "x") {
         title.innerHTML = "X Player Is Winner";
-        clear()
+        timeOut()
+        setTimeout(function() { title.innerHTML = "O Player will start"; }, 4000)
         x += 1;
         xSpan.innerHTML = x;
     } else if (letter7.innerHTML === "x" && letter8.innerHTML === "x" && letter9.innerHTML === "x") {
         title.innerHTML = "X Player Is Winner";
-        clear()
+        timeOut()
+        setTimeout(function() { title.innerHTML = "O Player will start"; }, 4000)
         x += 1;
         xSpan.innerHTML = x;
     }
     // o winner
     if (letter1.innerHTML === "o" && letter2.innerHTML === "o" && letter3.innerHTML === "o") {
         title.innerHTML = "O Player Is Winner";
-        clear()
+        timeOut()
+        setTimeout(function() { title.innerHTML = "X Player will start"; }, 4000)
         z += 1;
         oSpan.innerHTML = z;
     } else if (letter1.innerHTML === "o" && letter4.innerHTML === "o" && letter7.innerHTML === "o") {
         title.innerHTML = "O Player Is Winner";
-        clear()
+        timeOut()
+        setTimeout(function() { title.innerHTML = "X Player will start"; }, 4000)
         z += 1;
         oSpan.innerHTML = z;
     } else if (letter1.innerHTML === "o" && letter5.innerHTML === "o" && letter9.innerHTML === "o") {
         title.innerHTML = "O Player Is Winner";
-        clear()
+        timeOut()
+        setTimeout(function() { title.innerHTML = "X Player will start"; }, 4000)
         z += 1;
         oSpan.innerHTML = z;
     } else if (letter2.innerHTML === "o" && letter5.innerHTML === "o" && letter8.innerHTML === "o") {
         title.innerHTML = "O Player Is Winner";
-        clear()
+        timeOut()
+        setTimeout(function() { title.innerHTML = "X Player will start"; }, 4000)
         z += 1;
         oSpan.innerHTML = z;
     } else if (letter3.innerHTML === "o" && letter5.innerHTML === "o" && letter7.innerHTML === "o") {
         title.innerHTML = "O Player Is Winner";
-        clear()
+        timeOut()
+        setTimeout(function() { title.innerHTML = "X Player will start"; }, 4000)
         z += 1;
         oSpan.innerHTML = z;
     } else if (letter3.innerHTML === "o" && letter6.innerHTML === "o" && letter9.innerHTML === "o") {
         title.innerHTML = "O Player Is Winner";
-        clear()
+        timeOut()
+        setTimeout(function() { title.innerHTML = "X Player will start"; }, 4000)
         z += 1;
         oSpan.innerHTML = z;
     } else if (letter4.innerHTML === "o" && letter5.innerHTML === "o" && letter6.innerHTML === "o") {
         title.innerHTML = "O Player Is Winner";
-        clear()
+        timeOut()
+        setTimeout(function() { title.innerHTML = "X Player will start"; }, 4000)
         z += 1;
         oSpan.innerHTML = z;
     } else if (letter7.innerHTML === "o" && letter8.innerHTML === "o" && letter9.innerHTML === "o") {
         title.innerHTML = "O Player Is Winner";
-        clear()
+        timeOut()
+        setTimeout(function() { title.innerHTML = "X Player will start"; }, 4000)
         z += 1;
         oSpan.innerHTML = z;
     }
-
 }
 
 
 // clear function 
 
 function clear() {
-    letter1.innerHTML = "<p></p>";
-    letter2.innerHTML = "<p></p>";
-    letter3.innerHTML = "<p></p>";
-    letter4.innerHTML = "<p></p>";
-    letter5.innerHTML = "<p></p>";
-    letter6.innerHTML = "<p></p>";
-    letter7.innerHTML = "<p></p>";
-    letter8.innerHTML = "<p></p>";
-    letter9.innerHTML = "<p></p>";
+    letter1.innerHTML = "";
+    letter2.innerHTML = "";
+    letter3.innerHTML = "";
+    letter4.innerHTML = "";
+    letter5.innerHTML = "";
+    letter6.innerHTML = "";
+    letter7.innerHTML = "";
+    letter8.innerHTML = "";
+    letter9.innerHTML = "";
 }
 
 
@@ -261,13 +285,13 @@ function clear() {
 function result() {
     if (xSpan.innerHTML == 3) {
         content.style.display = "none";
-        replay.style.display = "ruby";
+        replay.style.display = "none";
         winnerPlayer.innerHTML = "X ";
         loserPlayer.innerHTML = "O ";
         congratulation.style.display = "block";
     } else if (oSpan.innerHTML == 3) {
         content.style.display = "none";
-        replay.style.display = "ruby";
+        replay.style.display = "none";
         winnerPlayer.innerHTML = "O ";
         loserPlayer.innerHTML = "X ";
         congratulation.style.display = "block";
@@ -278,6 +302,21 @@ function result() {
 
 
 // Draw function 
+function btnReplay() {
+    if (letter1.innerHTML != "" &
+        letter2.innerHTML != "" &
+        letter3.innerHTML != "" &
+        letter4.innerHTML != "" &
+        letter5.innerHTML != "" &
+        letter6.innerHTML != "" &
+        letter7.innerHTML != "" &
+        letter8.innerHTML != "" &
+        letter9.innerHTML != "") {
+        replay.style.display = "ruby";
+    } else {
+        replay.style.display = "none";
+    }
+}
 
 function Draw() {
     clear()
@@ -291,7 +330,16 @@ function back() {
     congratulation.style.display = "none";
     content.style.display = "grid";
     replay.style.display = "ruby";
-    xSpan.innerHTML = 0;
-    oSpan.innerHTML = 0;
+    x = 0;
+    z = 0;
+    xSpan.innerHTML = x;
+    oSpan.innerHTML = z;
     title.innerHTML = "<p>Let's Start...</p>";
+}
+
+
+function timeOut() {
+    let dots = setInterval(function() { title.innerHTML += "." }, 1000)
+    setTimeout(function() { clear() }, 4000);
+    setTimeout(function() { clearInterval(dots) }, 3000);
 }
